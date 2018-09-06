@@ -1,0 +1,49 @@
+{
+  "name": "front-end-exercise",
+  "version": "0.1.0",
+  "description": "GoNoodle engineering front-end exercise.",
+  "main": "index.js",
+  "repository": "git@github.com:HealthTeacher/front-end-exercise.git",
+  "author": "David Calhoun <david@gonoodle.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "webpack --mode=production",
+    "start": "webpack-dev-server --hot --mode=development",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-rc.1",
+    "@babel/preset-env": "^7.0.0-rc.1",
+    "@babel/preset-react": "^7.0.0-rc.1",
+    "babel-core": "^7.0.0-0",
+    "babel-eslint": "^8.2.6",
+    "babel-jest": "^23.4.2",
+    "babel-loader": "^8.0.0-beta",
+    "enzyme": "^3.5.0",
+    "enzyme-adapter-react-16": "^1.3.1",
+    "eslint": "^5.4.0",
+    "eslint-config-prettier": "^3.0.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-promise": "^4.0.0",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-standard": "^3.1.0",
+    "jest": "^23.5.0",
+    "jest-watch-typeahead": "^0.2.0",
+    "prettier": "^1.14.2",
+    "prop-types": "^15.6.2",
+    "react-hot-loader": "^4.3.4",
+    "webpack-cli": "^3.1.0"
+  },
+  "dependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "repeat-string": "^1.6.1",
+    "webpack": "^4.16.5",
+    "webpack-dev-server": "^3.1.5"
+  }
+}

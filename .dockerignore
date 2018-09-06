@@ -1,0 +1,7 @@
+*
+!.babelrc
+!index.ejs
+!package.json
+!src
+!webpack.config.js
+!yarn.lock
