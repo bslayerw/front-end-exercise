@@ -37,9 +37,8 @@ export default (action = {}) => (state, props) => {
     case CLEAR:
       return { input: 0 };
     case DELETE:
-      return {
-        input: parseInt(state.input.toString().slice(0, -1)),
-      };
+      const inputValue = parseInt(state.input.toString().slice(0, -1));
+      return { input: isNaN(inputValue) ? 0 : inputValue };
     case INPUT:
       const char = String.fromCharCode(action.which);
       const input = state.awaitingOperation ? state.input + char : char;

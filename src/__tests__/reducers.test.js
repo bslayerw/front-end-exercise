@@ -329,4 +329,12 @@ describe('TOGGLE_ROMAN', () => {
       });
     });
   });
+
+  describe('Bug fix', () => {
+    it('calculator should return 0 when input is entirely deleted: [https://github.com/HealthTeacher/front-end-exercise/issues/2]', () => {
+      expect(reducer({ type: DELETE })({ ...defaultState, input: 1 })).toEqual({
+        input: 0,
+      });
+    });
+  });
 });
