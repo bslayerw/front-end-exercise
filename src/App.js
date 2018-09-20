@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import reduce from './reducers';
 import {
   ADDITION,
@@ -109,11 +110,25 @@ class App extends Component {
       default:
     }
   }
+  componentDidMount() {
+    this.focusInput();
+  }
+  componentDidUpdate() {
+    if (this.state.active) {
+      this.focusInput();
+    }
+  }
+  focusInput() {
+    this.inputNode.focus();
+  }
 
   render() {
     const { awaitingOperation, input, operation, result, roman } = this.state;
     return (
       <div
+        ref={node => {
+          this.inputNode = node;
+        }}
         onKeyDown={this.handleKeyDown}
         style={styles.container}
         tabIndex="-1"
